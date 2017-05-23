@@ -1,6 +1,6 @@
 # what-to-do
 
-# Local setup
+## Local setup
 Before running shell commands, set the `FLASK_APP` and `FLASK_DEBUG`
 environment variables :
 
