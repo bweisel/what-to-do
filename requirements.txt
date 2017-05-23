@@ -20,6 +20,7 @@ MarkupSafe==1.0
 marshmallow==2.13.5
 marshmallow-sqlalchemy==0.13.1
 packaging==16.8
+psycopg2==2.7.1
 pycparser==2.17
 PyJWT==1.4.2
 pyparsing==2.2.0
