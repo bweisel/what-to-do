@@ -5,6 +5,7 @@ Before running shell commands, set the `FLASK_APP` and `FLASK_DEBUG`
 environment variables :
 
     export FLASK_APP=/path/to/manage.py
+    export SECRET_KEY=this-is-the-local-key
     export FLASK_DEBUG=1
 
 Then setup the database (sqlite for local dev):
