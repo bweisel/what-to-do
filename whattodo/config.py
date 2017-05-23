@@ -6,9 +6,10 @@ TESTING = False
 
 PROJECT_ROOT = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
-JWT_AUTH_USERNAME_KEY = 'email'
-JWT_EXPIRATION_DELTA = timedelta(seconds=2592000)  # 30 days
-JWT_AUTH_URL_RULE = '/api/auth'
+# Flask-JWT
+JWT_EXPIRATION_DELTA = timedelta(seconds=2592000)  # Override token expiration to 30 days
+JWT_AUTH_URL_RULE = '/api/auth'  # Override auth API URL
+JWT_AUTH_USERNAME_KEY = 'email'  # Override auth request body (username -> email)
 
 SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
 SQLALCHEMY_TRACK_MODIFICATIONS = True
