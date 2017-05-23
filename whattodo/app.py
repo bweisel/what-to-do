@@ -53,7 +53,6 @@ def configure_db(app):
 
 def configure_auth(app):
     """Initialize flask-jwt"""
-    app.config.setdefault('JWT_EXPIRATION_DELTA', timedelta(seconds=2592000))  # 30 days
     jwt = JWT(app, auth_utils.authenticate, auth_utils.identity)
     jwt.init_app(app)
 

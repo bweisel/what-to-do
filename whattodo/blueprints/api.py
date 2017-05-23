@@ -6,7 +6,7 @@ from whattodo.resources import UserDetail, UserList
 from whattodo.resources import ItemDetail, ItemList
 
 
-api_bp = Blueprint('api', __name__, url_prefix='api')
+api_bp = Blueprint('api', __name__, url_prefix='/api')
 api = Api(api_bp)
 
 api.add_resource(UserDetail, '/users/<int:user_id>')

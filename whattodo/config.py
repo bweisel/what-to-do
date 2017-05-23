@@ -1,13 +1,17 @@
 import os
+from datetime import timedelta
 
 DEBUG = False
 TESTING = False
 
 PROJECT_ROOT = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
+JWT_AUTH_USERNAME_KEY = 'email'
+JWT_EXPIRATION_DELTA = timedelta(seconds=2592000)  # 30 days
+JWT_AUTH_URL_RULE = '/api/auth'
+
 SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
 SQLALCHEMY_TRACK_MODIFICATIONS = True
-
 SECRET_KEY = os.environ['SECRET_KEY']
 
 LOGGING_CONFIG = {
