@@ -6,12 +6,9 @@ TESTING = False
 PROJECT_ROOT = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
 
 SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
-#SQLALCHEMY_DATABASE_URI = 'sqlite:////Users/bweisel/Code/what-to-do/what-to-do.db'
-
 SQLALCHEMY_TRACK_MODIFICATIONS = True
 
 SECRET_KEY = os.environ['SECRET_KEY']
-#SECRET_KEY = 'this-is-the-local-key'
 
 LOGGING_CONFIG = {
     'version': 1,
