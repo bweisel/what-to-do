@@ -1,6 +1,12 @@
 # what-to-do
 
 ## Local setup
+Clone the repo and install the dependencies
+
+    git clone https://github.com/bweisel/what-to-do
+    cd what-to-do
+    pip install -r requirements.txt
+
 Set some required environment variables:
 
     export FLASK_APP=/path/to/manage.py
@@ -12,11 +18,7 @@ Then setup the database (sqlite for local dev):
     flask db init
     flask db migrate
     flask db upgrade
-    flask run
 
-Then run the following commands to bootstrap your environment:
+Then run the server:
 
-    git clone https://github.com/bweisel/what-to-do
-    cd what-to-do
-    pip install -r requirements.txt
     flask run
