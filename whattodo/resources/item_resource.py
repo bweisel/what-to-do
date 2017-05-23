@@ -20,6 +20,7 @@ class ItemSchema(BaseAPISchema):
 
     class Meta:
         model = Item
+        fields = ('id', 'description', 'user_id', 'created', 'last_updated')
 
 
 class ItemDetail(Resource):
